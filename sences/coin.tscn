@@ -1,0 +1,221 @@
+[gd_scene format=3 uid="uid://c8mi4ic586jnp"]
+
+[ext_resource type="Script" uid="uid://byaxvs10tstvy" path="res://scripts/coin.gd" id="1_esqts"]
+[ext_resource type="Texture2D" uid="uid://ckdjdt1qi6d0b" path="res://assets/sprites/coin.png" id="1_qrf0s"]
+[ext_resource type="AudioStream" uid="uid://dhc2a6ekt2fx6" path="res://assets/sounds/coin.wav" id="3_ri8hd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esqts"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri8hd"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cui3w"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tek2p"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0e2mo"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qff8u"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcypg"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3i1r0"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r5uj"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cuau4"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5qv5"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sw2tl"]
+atlas = ExtResource("1_qrf0s")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_14jua"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_esqts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri8hd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cui3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tek2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0e2mo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qff8u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcypg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3i1r0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r5uj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cuau4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5qv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sw2tl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4413h"]
+radius = 5.0
+
+[sub_resource type="Animation" id="Animation_ri8hd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pick up sound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_cui3w"]
+resource_name = "pick up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pick up sound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.43333334),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tek2p"]
+_data = {
+&"RESET": SubResource("Animation_ri8hd"),
+&"pick up": SubResource("Animation_cui3w")
+}
+
+[node name="coin" type="Area2D" unique_id=1374587626]
+position = Vector2(13, 1)
+collision_mask = 2
+script = ExtResource("1_esqts")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1302583982]
+sprite_frames = SubResource("SpriteFrames_14jua")
+autoplay = "default"
+frame_progress = 0.18577649
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1250774086]
+shape = SubResource("CircleShape2D_4413h")
+
+[node name="pick up sound" type="AudioStreamPlayer2D" parent="." unique_id=919804596]
+stream = ExtResource("3_ri8hd")
+bus = &"SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=892161858]
+libraries/ = SubResource("AnimationLibrary_tek2p")
+speed_scale = -1.808
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
