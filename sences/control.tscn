@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bfe7ro2k4schh"]
 
 [ext_resource type="FontFile" uid="uid://b5c1477rax3ni" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_1jbmi"]
-[ext_resource type="Script" uid="uid://ckrlmiddhaqmu" path="res://scripts/main menu.gd" id="1_ieqi5"]
+[ext_resource type="Script" uid="uid://sxqb0jpe7cby" path="res://scripts/control.gd" id="1_ieqi5"]
 [ext_resource type="Texture2D" uid="uid://rhbyf0vjkcsx" path="res://assets/fonts/Screenshot 2026-07-18 232724.png" id="2_ieqi5"]
-[ext_resource type="Texture2D" uid="uid://d1jc4gg0ve7dv" path="res://assets/sounds/Screenshot 2026-07-18 232736.png" id="3_o0ilj"]
+[ext_resource type="Texture2D" uid="uid://bwh0nxy1nxrhu" path="res://assets/sprites/Screenshot 2026-07-18 232736.png" id="3_1jbmi"]
 
-[node name="main menu" type="Control" unique_id=1116071216]
+[node name="Control" type="Control" unique_id=1797162702]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,73 +14,63 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ieqi5")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1419765773]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1037550462]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.29411766, 0, 0, 1)
+color = Color(0, 0, 0.23921569, 1)
 
-[node name="Label" type="Label" parent="." unique_id=1699222310]
-layout_mode = 0
-offset_left = 192.0
-offset_top = 64.0
-offset_right = 963.0
-offset_bottom = 128.0
+[node name="Label" type="Label" parent="." unique_id=1741055705]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 265.0
+offset_top = 59.0
+offset_right = -254.0
+offset_bottom = -466.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_1jbmi")
-theme_override_font_sizes/font_size = 63
+theme_override_font_sizes/font_size = 57
 text = "Egyption game"
 
-[node name="play" type="TextureButton" parent="." unique_id=12946792]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.44400004
-anchor_top = 0.395
-anchor_right = 0.44400004
-anchor_bottom = 0.395
-offset_left = 0.5119629
-offset_top = 0.039993286
-offset_right = 106.51196
-offset_bottom = 45.039993
-texture_normal = ExtResource("2_ieqi5")
-texture_pressed = ExtResource("3_o0ilj")
-
-[node name="Label2" type="Label" parent="play" unique_id=1455001007]
+[node name="play" type="TextureButton" parent="." unique_id=1016717318]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 8.0
-offset_right = 96.0
-offset_bottom = 32.0
-theme_override_fonts/font = ExtResource("1_1jbmi")
-theme_override_font_sizes/font_size = 23
+offset_left = 515.0
+offset_top = 277.0
+offset_right = 620.0
+offset_bottom = 322.0
+texture_normal = ExtResource("2_ieqi5")
+texture_pressed = ExtResource("3_1jbmi")
+
+[node name="Label" type="Label" parent="play" unique_id=185478089]
+layout_mode = 0
+offset_left = 21.0
+offset_right = 86.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 32
 text = "play"
 
-[node name="exit" type="TextureButton" parent="." unique_id=1538295437]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.44400004
-anchor_top = 0.395
-anchor_right = 0.44400004
-anchor_bottom = 0.395
-offset_left = 0.5119629
-offset_top = 152.04
-offset_right = 106.51196
-offset_bottom = 197.04
-texture_normal = ExtResource("2_ieqi5")
-texture_pressed = ExtResource("3_o0ilj")
-
-[node name="Label2" type="Label" parent="exit" unique_id=1411951872]
+[node name="quit" type="TextureButton" parent="." unique_id=808503302]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 8.0
-offset_right = 96.0
-offset_bottom = 59.0
-theme_override_fonts/font = ExtResource("1_1jbmi")
-theme_override_font_sizes/font_size = 23
-text = "exit
-"
+offset_left = 515.0
+offset_top = 374.0
+offset_right = 620.0
+offset_bottom = 419.0
+texture_normal = ExtResource("2_ieqi5")
+texture_pressed = ExtResource("3_1jbmi")
+
+[node name="Label" type="Label" parent="quit" unique_id=798741451]
+layout_mode = 0
+offset_left = 21.0
+offset_right = 88.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 32
+text = "Quit"
 
 [connection signal="pressed" from="play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
