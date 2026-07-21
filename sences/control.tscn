@@ -12,6 +12,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 script = ExtResource("1_ieqi5")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1037550462]
@@ -48,10 +50,12 @@ texture_normal = ExtResource("2_ieqi5")
 texture_pressed = ExtResource("3_1jbmi")
 
 [node name="Label" type="Label" parent="play" unique_id=185478089]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_left = 21.0
-offset_right = 86.0
-offset_bottom = 45.0
+offset_right = -19.0
 theme_override_font_sizes/font_size = 32
 text = "play"
 
@@ -65,10 +69,12 @@ texture_normal = ExtResource("2_ieqi5")
 texture_pressed = ExtResource("3_1jbmi")
 
 [node name="Label" type="Label" parent="quit" unique_id=798741451]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_left = 21.0
-offset_right = 88.0
-offset_bottom = 45.0
+offset_right = -17.0
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 

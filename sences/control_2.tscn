@@ -58,12 +58,12 @@ text = "restart"
 [node name="TextureButton2" type="TextureButton" parent="." unique_id=1131331970]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.0810001
+anchor_bottom = 1.121
 offset_left = 531.0
 offset_top = 371.0
-offset_right = -516.0
-offset_bottom = -232.0
+offset_right = -609.31213
+offset_bottom = -310.40802
 texture_normal = ExtResource("3_su2el")
 texture_pressed = ExtResource("4_7xdnf")
 
