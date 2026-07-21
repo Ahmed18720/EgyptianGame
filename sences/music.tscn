@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://chxxq3lps0tbp"]
-
-[ext_resource type="AudioStream" uid="uid://bens7yo578bf" path="res://assets/music/time_for_adventure.mp3" id="1_hmkcn"]
-
-[node name="music" type="AudioStreamPlayer2D" unique_id=1085024227]
-stream = ExtResource("1_hmkcn")
-autoplay = true
-bus = &"music"
