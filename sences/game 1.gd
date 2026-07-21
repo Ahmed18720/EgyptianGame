@@ -12,6 +12,5 @@ func add_point():
 	score_label.text ="you collected " + str(score)  + " coins."
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print(11111)
 	if body.name == "player":
 		get_tree().change_scene_to_file("res://sences/level_2.tscn")
