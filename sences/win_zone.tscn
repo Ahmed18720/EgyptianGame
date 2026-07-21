@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://clu1cxmftn5rh" path="res://sences/win_zone.gd" id="1_0cfr3"]
 
 [node name="win zone" type="Area2D" unique_id=356664302]
+light_mask = 16
+visibility_layer = 16
 script = ExtResource("1_0cfr3")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
