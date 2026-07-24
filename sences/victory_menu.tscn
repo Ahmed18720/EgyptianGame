@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://bhx2xhff33stw"]
+
+[ext_resource type="FontFile" uid="uid://b5c1477rax3ni" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_1njxo"]
+[ext_resource type="Script" uid="uid://djguqwomeq403" path="res://scripts/victory_menu.gd" id="1_vkoiy"]
+[ext_resource type="Texture2D" uid="uid://rhbyf0vjkcsx" path="res://assets/fonts/Screenshot 2026-07-18 232724.png" id="2_vkoiy"]
+[ext_resource type="Texture2D" uid="uid://d1jc4gg0ve7dv" path="res://assets/sounds/Screenshot 2026-07-18 232736.png" id="3_8f4qh"]
+
+[node name="VICTORY_MENU" type="Control" unique_id=1593458545]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vkoiy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1693259245]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0009908918, 0.06820867, 0.39391452, 1)
+
+[node name="Label" type="Label" parent="." unique_id=740654928]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 66.0
+offset_right = 825.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("1_1njxo")
+theme_override_font_sizes/font_size = 70
+text = "VICTORY"
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1129976211]
+layout_mode = 0
+offset_left = 539.0
+offset_top = 227.0
+offset_right = 644.0
+offset_bottom = 272.0
+texture_normal = ExtResource("2_vkoiy")
+texture_pressed = ExtResource("3_8f4qh")
+
+[node name="Label" type="Label" parent="TextureButton" unique_id=1637395494]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 102.0
+offset_bottom = 32.0
+theme_override_font_sizes/font_size = 18
+text = "NEXT LEVEL"
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=1648515945]
+layout_mode = 0
+offset_left = 539.0
+offset_top = 337.0
+offset_right = 644.0
+offset_bottom = 382.0
+texture_normal = ExtResource("2_vkoiy")
+texture_pressed = ExtResource("3_8f4qh")
+
+[node name="Label" type="Label" parent="TextureButton2" unique_id=1910288379]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 25
+text = "RESTART"
+
+[node name="TextureButton3" type="TextureButton" parent="." unique_id=140046934]
+layout_mode = 0
+offset_left = 539.0
+offset_top = 450.0
+offset_right = 644.0
+offset_bottom = 495.0
+texture_normal = ExtResource("2_vkoiy")
+texture_pressed = ExtResource("3_8f4qh")
+
+[node name="Label" type="Label" parent="TextureButton3" unique_id=542311277]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 86.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 29
+text = "QUIT"
+
+[node name="Label2" type="Label" parent="." unique_id=1751898787]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 568.0
+offset_right = 859.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 31
+text = "WINNER WINNER CHICKEN DINNER!"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]

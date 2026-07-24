@@ -242,7 +242,7 @@ text = "you collected
 autowrap_mode = 2
 
 [node name="player" parent="." unique_id=1100937744 instance=ExtResource("1_w4np8")]
-position = Vector2(8431, 40)
+position = Vector2(-52, 88)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1335788362]
 position = Vector2(0, 24)
@@ -429,7 +429,7 @@ position = Vector2(680, 16)
 position = Vector2(488.00003, 48)
 
 [node name="coin2" parent="coin" unique_id=536591404 instance=ExtResource("4_qi43j")]
-position = Vector2(312, 16.000002)
+position = Vector2(304, 48)
 
 [node name="coin3" parent="coin" unique_id=1039205140 instance=ExtResource("4_qi43j")]
 position = Vector2(240, -80)
@@ -450,10 +450,10 @@ position = Vector2(944, 104)
 [node name="text" type="Node" parent="." unique_id=1142644054]
 
 [node name="Label" type="Label" parent="text" unique_id=27431700]
-offset_left = -177.0
+offset_left = -184.0
 offset_top = 80.0
-offset_right = -89.0
-offset_bottom = 93.0
+offset_right = -96.0
+offset_bottom = 110.0
 theme_override_fonts/font = ExtResource("7_c5ma8")
 theme_override_font_sizes/font_size = 8
 text = "WELCOME
