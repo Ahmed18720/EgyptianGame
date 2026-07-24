@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cscr6uc5is77f"]
 
 [ext_resource type="Script" uid="uid://hcpihr5ox1l3" path="res://scripts/game_manager.gd" id="1_3s5ns"]
-[ext_resource type="Script" uid="uid://yxw2lhhl6mos" path="res://sences/game 1.gd" id="1_acxxb"]
+[ext_resource type="Script" uid="uid://yxw2lhhl6mos" path="res://scripts/game 1.gd" id="1_acxxb"]
 [ext_resource type="PackedScene" uid="uid://belx66bl1lvnb" path="res://sences/player.tscn" id="1_w4np8"]
 [ext_resource type="Texture2D" uid="uid://bp382iadir5nt" path="res://assets/sprites/world_tileset.png" id="2_a53l5"]
 [ext_resource type="PackedScene" uid="uid://wviah776fblh" path="res://sences/platform.tscn" id="3_pxhlp"]
@@ -242,12 +242,14 @@ text = "you collected
 autowrap_mode = 2
 
 [node name="player" parent="." unique_id=1100937744 instance=ExtResource("1_w4np8")]
-position = Vector2(7424, 24)
+position = Vector2(-57, 86)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1335788362]
 position = Vector2(0, 24)
 offset = Vector2(0, 20)
 zoom = Vector2(4, 4)
+limit_left = -9999998
+limit_right = 10000002
 limit_bottom = 155
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true

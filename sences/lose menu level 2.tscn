@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://iywirvvkoly6"]
+
+[ext_resource type="Script" uid="uid://xmjehyd56uue" path="res://scripts/lose_menu_level_2.gd" id="1_2wn4v"]
+[ext_resource type="PackedScene" uid="uid://iywirvvkoly6" path="res://sences/lose menu level 2.tscn" id="2_fefa6"]
+
+[node name="lose menu level 2" unique_id=1522197161 instance=ExtResource("2_fefa6")]
+script = ExtResource("1_2wn4v")
