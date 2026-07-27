@@ -478,19 +478,19 @@ theme_override_fonts/font = ExtResource("7_c5ma8")
 theme_override_font_sizes/font_size = 8
 text = "level 1"
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1389371833]
+[node name="win zone" type="Area2D" parent="." unique_id=1389371833]
 light_mask = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=814466675]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="win zone" unique_id=814466675]
 light_mask = 2
 position = Vector2(8529.5, 60.5)
 rotation = -1.5707964
 shape = SubResource("RectangleShape2D_hcqm1")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1366276087]
+[node name="Sprite2D" type="Sprite2D" parent="win zone" unique_id=1366276087]
 light_mask = 2
 position = Vector2(8530, 60)
 texture = ExtResource("10_uc136")
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="win zone" to="." method="_on_area_2d_body_entered"]
