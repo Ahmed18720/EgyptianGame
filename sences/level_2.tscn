@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://wviah776fblh" path="res://sences/platform.tscn" id="4_wfk7x"]
 [ext_resource type="PackedScene" uid="uid://xmg0bg3s26hv" path="res://sences/kill_zone_2.tscn" id="5_wfk7x"]
 [ext_resource type="PackedScene" uid="uid://c8mi4ic586jnp" path="res://sences/coin.tscn" id="6_ugvk2"]
+[ext_resource type="PackedScene" uid="uid://ccrgrdm2ic6jc" path="res://sences/slime.tscn" id="10_mpyl3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nidrs"]
 texture = ExtResource("2_skt3r")
@@ -169,9 +170,9 @@ script = ExtResource("2_j4h1f")
 
 [node name="score label" type="Label" parent="game manager" unique_id=1892844161]
 offset_left = 7519.0
-offset_top = -247.0
+offset_top = -199.0
 offset_right = 7781.0
-offset_bottom = -197.0
+offset_bottom = -149.0
 theme_override_fonts/font = ExtResource("3_bwwty")
 theme_override_font_sizes/font_size = 16
 text = "you collected x coins"
@@ -879,3 +880,40 @@ rotation = 3.1415927
 [node name="coin78" parent="coins" unique_id=1456568520 instance=ExtResource("6_ugvk2")]
 position = Vector2(3722, -88)
 rotation = 3.1415927
+
+[node name="slime" type="Node" parent="." unique_id=938767705]
+
+[node name="slime" parent="slime" unique_id=1230483830 instance=ExtResource("10_mpyl3")]
+position = Vector2(1276, -109)
+
+[node name="slime2" parent="slime" unique_id=891018805 instance=ExtResource("10_mpyl3")]
+position = Vector2(1405.0001, -109.00001)
+rotation = -0.02769559
+
+[node name="slime4" parent="slime" unique_id=1308955083 instance=ExtResource("10_mpyl3")]
+position = Vector2(4012, -125)
+rotation = -0.02769559
+
+[node name="slime5" parent="slime" unique_id=1259453231 instance=ExtResource("10_mpyl3")]
+position = Vector2(4108, -125)
+rotation = -0.02769559
+
+[node name="slime6" parent="slime" unique_id=1712929211 instance=ExtResource("10_mpyl3")]
+position = Vector2(4204, -126)
+rotation = -0.02769559
+
+[node name="slime7" parent="slime" unique_id=313343183 instance=ExtResource("10_mpyl3")]
+position = Vector2(4300, -125.00001)
+rotation = -0.02769559
+
+[node name="slime8" parent="slime" unique_id=1621762292 instance=ExtResource("10_mpyl3")]
+position = Vector2(4396, -124.99999)
+rotation = -0.02769559
+
+[node name="slime9" parent="slime" unique_id=2100340739 instance=ExtResource("10_mpyl3")]
+position = Vector2(4812, -125)
+rotation = -0.02769559
+
+[node name="slime3" parent="slime" unique_id=293069443 instance=ExtResource("10_mpyl3")]
+position = Vector2(2529.0002, -109.00001)
+rotation = -0.02769559

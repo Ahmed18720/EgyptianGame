@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://citr8fh6mooqx"]
+
+[ext_resource type="FontFile" uid="uid://b5c1477rax3ni" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_euxst"]
+[ext_resource type="Script" uid="uid://de072hedi0ii5" path="res://scripts/kill_menu_2.gd" id="1_l80pe"]
+[ext_resource type="Texture2D" uid="uid://rhbyf0vjkcsx" path="res://assets/fonts/Screenshot 2026-07-18 232724.png" id="3_bw0ig"]
+[ext_resource type="Texture2D" uid="uid://d1jc4gg0ve7dv" path="res://assets/sounds/Screenshot 2026-07-18 232736.png" id="4_nusct"]
+
+[node name="kill_menu_2" type="Control" unique_id=1522594871]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l80pe")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1836549504]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39215687, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1872445648]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 47.0
+offset_right = 893.0
+offset_bottom = 124.0
+theme_override_fonts/font = ExtResource("1_euxst")
+theme_override_font_sizes/font_size = 76
+text = "game over"
+
+[node name="Label2" type="Label" parent="." unique_id=1707254830]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 521.0
+offset_right = 633.0
+offset_bottom = 566.0
+theme_override_font_sizes/font_size = 32
+text = "good luck"
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=874491063]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 502.0
+offset_top = 213.0
+offset_right = -545.0
+offset_bottom = -390.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_bw0ig")
+texture_pressed = ExtResource("4_nusct")
+
+[node name="Label" type="Label" parent="TextureButton" unique_id=748293146]
+layout_mode = 0
+offset_right = 105.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 31
+text = "restart"
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=785096767]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 502.0
+offset_top = 359.0
+offset_right = -545.0
+offset_bottom = -244.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_bw0ig")
+texture_pressed = ExtResource("4_nusct")
+
+[node name="Label" type="Label" parent="TextureButton2" unique_id=247878476]
+layout_mode = 0
+offset_left = 17.0
+offset_top = -10.0
+offset_right = 105.0
+offset_bottom = 43.0
+theme_override_font_sizes/font_size = 38
+text = "quit"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
