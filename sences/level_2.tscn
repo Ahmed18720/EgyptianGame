@@ -164,6 +164,235 @@ sources/3 = SubResource("TileSetAtlasSource_ugvk2")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o1l8m"]
 size = Vector2(9, 15)
 
+[sub_resource type="Animation" id="Animation_40bgm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node/slime4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4012, -125)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node/slime5:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4108, -125)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node/slime2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1405, -109.00001)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node/slime6:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4204, -126)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node/slime7:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4300, -125.00001)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node/slime3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1275, -109)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node/slime8:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4396, -124.99999)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node/slime9:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4812, -125)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node/slime10:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2529, -109.00001)]
+}
+
+[sub_resource type="Animation" id="Animation_o1l8m"]
+resource_name = "slime"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node/slime4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4044, -124), Vector2(3979, -124)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node/slime5:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4140, -124), Vector2(4075, -124)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node/slime2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1437, -108.00001), Vector2(1372, -108.00001)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node/slime6:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4236, -125), Vector2(4171, -125)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node/slime7:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4332, -124.00001), Vector2(4267, -124.00001)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node/slime3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1307, -108), Vector2(1242, -108)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node/slime8:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4428, -123.99999), Vector2(4363, -123.99999)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node/slime9:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4844, -124), Vector2(4779, -124)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node/slime10:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2561, -108.00001), Vector2(2496, -108.00001)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kvvrq"]
+_data = {
+&"RESET": SubResource("Animation_40bgm"),
+&"slime": SubResource("Animation_o1l8m")
+}
+
 [node name="level_2" type="Node2D" unique_id=2016327323]
 position = Vector2(2, 0)
 script = ExtResource("1_j4h1f")
@@ -184,7 +413,7 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="player" parent="." unique_id=1100937744 instance=ExtResource("1_4dxvr")]
-position = Vector2(7909, -160)
+position = Vector2(4250, -144)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1562843681]
 position = Vector2(-1, 7)
@@ -298,41 +527,6 @@ offset_top = -64.0
 offset_right = 162.0
 offset_bottom = -41.0
 text = "welcome to level 2"
-
-[node name="slime2" parent="." unique_id=891018805 instance=ExtResource("10_mpyl3")]
-position = Vector2(1403.0001, -109.00001)
-rotation = -0.02769559
-
-[node name="slime4" parent="." unique_id=1308955083 instance=ExtResource("10_mpyl3")]
-position = Vector2(4010, -125)
-rotation = -0.02769559
-
-[node name="slime5" parent="." unique_id=1259453231 instance=ExtResource("10_mpyl3")]
-position = Vector2(4106, -125)
-rotation = -0.02769559
-
-[node name="slime6" parent="." unique_id=1712929211 instance=ExtResource("10_mpyl3")]
-position = Vector2(4202, -126)
-rotation = -0.02769559
-
-[node name="slime7" parent="." unique_id=313343183 instance=ExtResource("10_mpyl3")]
-position = Vector2(4298, -125.00001)
-rotation = -0.02769559
-
-[node name="slime3" parent="." unique_id=1230483830 instance=ExtResource("10_mpyl3")]
-position = Vector2(1273, -109)
-
-[node name="slime8" parent="." unique_id=1621762292 instance=ExtResource("10_mpyl3")]
-position = Vector2(4394, -124.99999)
-rotation = -0.02769559
-
-[node name="slime9" parent="." unique_id=2100340739 instance=ExtResource("10_mpyl3")]
-position = Vector2(4810, -125)
-rotation = -0.02769559
-
-[node name="slime10" parent="." unique_id=293069443 instance=ExtResource("10_mpyl3")]
-position = Vector2(2527.0002, -109.00001)
-rotation = -0.02769559
 
 [node name="kill_zone_2" parent="." unique_id=782397281 instance=ExtResource("5_wfk7x")]
 position = Vector2(59, 118)
@@ -930,5 +1124,47 @@ texture = ExtResource("11_40bgm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="win zone" unique_id=972902451]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_o1l8m")
+
+[node name="Node" type="Node" parent="." unique_id=1233707129]
+
+[node name="slime4" parent="Node" unique_id=1308955083 instance=ExtResource("10_mpyl3")]
+position = Vector2(4012, -125)
+rotation = -0.02769559
+
+[node name="slime5" parent="Node" unique_id=1259453231 instance=ExtResource("10_mpyl3")]
+position = Vector2(4108, -125)
+rotation = -0.02769559
+
+[node name="slime2" parent="Node" unique_id=891018805 instance=ExtResource("10_mpyl3")]
+position = Vector2(1405, -109.00001)
+rotation = -0.02769559
+
+[node name="slime6" parent="Node" unique_id=1712929211 instance=ExtResource("10_mpyl3")]
+position = Vector2(4204, -126)
+rotation = -0.02769559
+
+[node name="slime7" parent="Node" unique_id=313343183 instance=ExtResource("10_mpyl3")]
+position = Vector2(4300, -125.00001)
+rotation = -0.02769559
+
+[node name="slime3" parent="Node" unique_id=1230483830 instance=ExtResource("10_mpyl3")]
+position = Vector2(1275, -109)
+
+[node name="slime8" parent="Node" unique_id=1621762292 instance=ExtResource("10_mpyl3")]
+position = Vector2(4396, -124.99999)
+rotation = -0.02769559
+
+[node name="slime9" parent="Node" unique_id=2100340739 instance=ExtResource("10_mpyl3")]
+position = Vector2(4812, -125)
+rotation = -0.02769559
+
+[node name="slime10" parent="Node" unique_id=293069443 instance=ExtResource("10_mpyl3")]
+position = Vector2(2529, -109.00001)
+rotation = -0.02769559
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node" unique_id=663558397]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_kvvrq")
+autoplay = &"slime"
 
 [connection signal="body_entered" from="win zone" to="." method="_on_win_zone_body_entered"]
