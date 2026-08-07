@@ -224,7 +224,7 @@ _data = {
 }
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mktrv"]
-distance = -169.0
+distance = -166.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hcqm1"]
 size = Vector2(14.999996, 9)
@@ -249,10 +249,10 @@ text = "you collected X coins"
 autowrap_mode = 2
 
 [node name="player" parent="." unique_id=1100937744 instance=ExtResource("1_w4np8")]
-position = Vector2(8160, 46)
+position = Vector2(-43, 104)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1335788362]
-position = Vector2(-1, 7)
+position = Vector2(0, 4)
 offset = Vector2(0, 20)
 zoom = Vector2(4, 4)
 limit_left = -9999998
