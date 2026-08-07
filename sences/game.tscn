@@ -249,7 +249,7 @@ text = "you collected X coins"
 autowrap_mode = 2
 
 [node name="player" parent="." unique_id=1100937744 instance=ExtResource("1_w4np8")]
-position = Vector2(0, -351)
+position = Vector2(8160, 46)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1335788362]
 position = Vector2(-1, 7)

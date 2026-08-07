@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bp382iadir5nt" path="res://assets/sprites/world_tileset.png" id="1_wnqdr"]
 [ext_resource type="PackedScene" uid="uid://belx66bl1lvnb" path="res://sences/player.tscn" id="2_t4864"]
 [ext_resource type="PackedScene" uid="uid://wviah776fblh" path="res://sences/platform.tscn" id="3_t4864"]
+[ext_resource type="PackedScene" uid="uid://b8bpkffcyuhvn" path="res://sences/kill_zone_3.tscn" id="4_hspro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hspro"]
 texture = ExtResource("1_wnqdr")
@@ -257,6 +258,9 @@ _data = {
 &"platform": SubResource("Animation_hspro")
 }
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ndfai"]
+distance = -92.0
+
 [node name="level3" type="Node2D" unique_id=454193262]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=902759399]
@@ -293,3 +297,8 @@ position = Vector2(7929, -147)
 root_node = NodePath("../platform")
 libraries/ = SubResource("AnimationLibrary_ndfai")
 autoplay = &"platform"
+
+[node name="kill_zone_3" parent="." unique_id=1538871237 instance=ExtResource("4_hspro")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone_3" unique_id=1807630676]
+shape = SubResource("WorldBoundaryShape2D_ndfai")

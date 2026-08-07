@@ -413,7 +413,7 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="player" parent="." unique_id=1100937744 instance=ExtResource("1_4dxvr")]
-position = Vector2(4250, -144)
+position = Vector2(59, -6)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1562843681]
 position = Vector2(-1, 7)
